@@ -101,7 +101,7 @@ if ($conn->connect_error) {
   function makeOrder ($orderArray) {
     global $conn;
     $error = 0;
-    foreach ($orderArray1 as $item)  {
+    foreach ($orderArray as $item)  {
 
       // == get latest sale ==
         $sql = "SELECT * FROM products WHERE id='".$item."'";
